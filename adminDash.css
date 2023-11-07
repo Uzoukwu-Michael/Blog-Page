@@ -1,0 +1,98 @@
+:root{
+  --secondary-color: #0c356a;
+  --primary-color: #279eff;
+  --accent-color: #d5ffd0;
+  --off-color: #40f8ff;
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'poppins';
+}
+
+body{
+  background-color: var(--secondary-color);
+}
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--primary-color);
+}
+header a{
+  margin: 10px;
+  padding: 5px 10px;
+  color: white;
+  text-decoration: none;
+} 
+header h1{
+  color: var(--accent-color);
+}
+#side-bar{
+  width: 20%;
+  background-color: var(--off-color);
+  height:600px;
+  /* margin-top: 60px; */
+}
+#side-bar h1{
+  margin: 7px;
+  padding: 7px;
+  font-weight: bold;
+}
+#side-bar ul{
+list-style: none;
+margin: 0;
+padding: 0;
+}
+#side-bar li{
+  padding: 10px;
+}
+#side-bar li:hover{
+  cursor: pointer;
+  color: white ;
+  background: var(--primary-color);
+}
+#user-side-bar{
+  width: 20%;
+  background-color: var(--off-color);
+  height:600px;
+  /* margin-top: 60px; */
+}
+#user-side-bar h1{
+  margin: 7px;
+  padding: 7px;
+  font-weight: bold;
+}
+#user-side-bar ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  }
+  #user-side-bar li{
+    padding: 10px;
+  }
+  #user-side-bar li:hover{
+    cursor: pointer;
+    color: white ;
+    background: var(--primary-color);  
+  }
+  .card-container{
+    display: flex;
+    width: 70%;
+    /* align-items: center; */
+    justify-content: space-between;
+
+  }
+  .cards{
+  background-color: var(--accent-color);
+  padding: 40px;
+  margin: 40px;
+  width: 30%;
+  text-align: center;
+  top: 0;
+  height: 30%;
+  }
+  #group{
+    display: flex;
+  }
