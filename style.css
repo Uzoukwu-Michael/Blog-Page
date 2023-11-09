@@ -197,3 +197,23 @@ th, td{
 th{
   background-color: var(--primary-color);
 }
+#message{
+  text-align: center;
+  background-color: red;
+  padding: 3px 0 ;
+  border-radius: 5px;
+  display: none;
+}
+#resetHeader{
+ margin-right: 70px;
+}
+#resetHeader a{
+  color: var(--accent-color);
+}
+#userHeader a{
+  margin-top: 20px;
+  padding: 20px;
+  color: var(--off-color);
+  font-size: large;
+  font-weight: bold;
+}

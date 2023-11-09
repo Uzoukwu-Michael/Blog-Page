@@ -1,0 +1,14 @@
+
+#single img{
+width: 100%;
+height:100%;
+}
+#imgDiv{
+  width: 100%;
+  height: 200px; 
+}
+#single #blog-content h1{
+text-align: center;
+}
+
+

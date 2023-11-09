@@ -1,0 +1,13 @@
+h1{
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+}
+h4{
+  text-align: center;
+  color: var(--accent-color);
+}
+a{
+  color: var(--off-color);
+  margin: 20px;
+}

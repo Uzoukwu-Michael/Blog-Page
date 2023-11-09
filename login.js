@@ -2,39 +2,29 @@ const loginEmail = document.getElementById('loginEmail');
 const loginPassword = document.getElementById('loginPassword');
 const loginButton = document.getElementById('loginButton');
 const loginFrom = document.getElementById('loginForm');
-
-if(localStorage.getItem('loggedInUserId')){
- 
-  loggedInUserId = JSON.parse(localStorage.getItem('loggedInUserId'))
-}
-
-if(localStorage.getItem('user') === null){
-  localStorage.setItem('user',JSON.stringify(userDb))
-}
-else{
- userDb = JSON.parse(localStorage.getItem('user'))
-}
+console.log(userDb)
 
 loginButton.addEventListener('click',function(e){
   e.preventDefault()
+  console.log('loggedInButton pressed')
   const loginemail = loginEmail.value
   const loginpassword = loginPassword.value
   let loggedIn = false
   console.log(userDb)
-
-  userDb.forEach(user => {
-    if(user.email === loginemail && user.password === loginpassword){
-      alert("Login successful")
+  const dblength =  userDb.length;
+  for(let i = 0; i < dblength; i++){
+    if(userDb[i].email === loginemail && userDb[i].password === loginpassword){
       loggedIn = true
-      loggedInUserId = user.id
-      localStorage.setItem('loggedInUserId',JSON.stringify(loggedInUserId))
-      console.log(user)
-
+      loggedInUserId = userDb[i].id
+      sessionStorage.setItem('loggedInUserId',JSON.stringify(loggedInUserId))
+      userDb[i].userCode = Math.random().toString(32).slice(2)
+      loggedInUserCode = userDb[i].userCode
+      sessionStorage.setItem('loggedInUserCode',JSON.stringify(loggedInUserCode))
+      alert("Login successful")
+      window.location.href = 'userDash.html'
     }
-    else{
-      alert("Login failed")
-    }  
-  })
+  }
+   showMessage('Wrong Email or Password please try again','red') 
 })
 
 

@@ -10,6 +10,7 @@
     <div id="container">
       <form id="registrationPageForm">
         <h1>Registration Page</h1>
+        <p id="message">Sample message</p>
         <input
           id="registrationName"
           type="text"
@@ -26,13 +27,13 @@
           autocomplete="email"
         />
         <input
-          type="password"
+          type="text"
           id="registrationPassword"
           placeholder="example$23e"
           required
           autocomplete="new-password"
         />
-        <button id="registerButton" onclick="register(e)">Register</button>
+        <button id="registerButton">Register</button>
       </form>
     </div>
     <script src="db.js"></script>

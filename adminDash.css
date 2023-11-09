@@ -96,3 +96,18 @@ padding: 0;
   #group{
     display: flex;
   }
+  button{
+    padding: 4px;
+    color: var(--accent-color);
+    font-size: 19px;
+    background-color:red;
+    margin: 30px;
+    width: 100px;
+    font-weight: 60px;
+    border-radius: 5px;
+    border: 1px solid var()
+    }
+    button:hover{
+      cursor: pointer;
+    }
+    

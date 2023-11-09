@@ -1,6 +1,23 @@
 const usersDiv = document.getElementById('users-div');
 
 
+
+function displayUsers(){
+  userDb.forEach(function(user){
+    // const row = document.createElement('tr')
+    // row.innerHTML 
+   usersDiv.innerHTML +=
+    `
+    <tr>
+    <td>${user.id}</td>
+      <td>${user.name}</td>
+      <td>${user.email}</td>
+      </tr>
+    `
+    // usersDiv.appendChild(row)
+  })
+}
+window.onload = displayUsers
 // userDb.forEach(function(user){
 //   usersDiv.innerHTML += `<tr>
 //   <td>${user.id}</td>
@@ -34,3 +51,8 @@ const usersDiv = document.getElementById('users-div');
 
 // })
 console.log(userDb)
+
+
+function deleteUser(){
+userDb[uid]
+}
