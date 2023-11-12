@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="userBody">
+  <header id="userHeader">
+    <a href="adminDash.html">Back</a>
+  </header>
+  <h1>Users Dashboard</h1>
+  <div id="userDashDiv">
+  <input type="search" placeholder="search" id="search">
+  <button><a target="_blank" href="registration.html">Create User</a></button>
+</div>
+   <table>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Edit</th>
+      <th>Delete</th>
+    </tr>
+    <tbody id="users-div">
+    </tbody>
+  </table>
+  <!-- <ul id="users-div">
+    <li><span>ID</span></li> 
+ </ul> -->
+
+  <script src="db.js"></script>
+  <script src="adminusers1.js"></script>
+</body>
+</html>

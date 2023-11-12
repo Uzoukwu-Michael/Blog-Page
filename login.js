@@ -1,8 +1,15 @@
+// const mes = new URLSearchParams(window.location.search);
+// const message1 = urlParams.get('mes');
+// isLoggedIn()
 const loginEmail = document.getElementById('loginEmail');
 const loginPassword = document.getElementById('loginPassword');
 const loginButton = document.getElementById('loginButton');
 const loginFrom = document.getElementById('loginForm');
-console.log(userDb)
+
+
+// if(message1 != null){
+//   showMessage(message1,'red')
+// }
 
 loginButton.addEventListener('click',function(e){
   e.preventDefault()

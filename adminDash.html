@@ -16,28 +16,26 @@
     <nav id="side-bar">
     <h1>Dashboard</h1>
     <ul>
-      <li><a href="users.html">Users</a></li>
+      <li><a href="adminusers.html">Users</a></li>
       <li><a href="index.html">Blogs</a></li>
     </ul>
+    <button onclick="logout()">Log Out</button>
     </nav>
     <section class="card-container">
       <div class="cards">
         <h1>Users</h1> 
-        <span>0</span>
+        <span id="number">0</span>
   
       </div>
-      <div class="cards">
-        <h1>Users</h1> 
-        <span>0</span>
-  
-      </div>
-      <div class="cards">
+      <!-- <div class="cards">
         <h1>Awaiting Appoval</h1> 
         <span>0</span>
   
-      </div>
+      </div> -->
     </section>
         </div>
   </div>
+  <script src="db.js"></script>
+  <script src="admindash.js"></script>
 </body>
 </html>

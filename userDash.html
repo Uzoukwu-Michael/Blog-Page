@@ -12,12 +12,14 @@
         <h1>Blog Page</h1>
         <a href="index.html">Home</a>
       </header>
+      <button><a href="create.html">Create Post</a></button>
+       <p id="welcome"></p>
       <div id="group">
         <div id="user-side-bar">
           <h1>Dashboard</h1>
           <ul>
             <li><a href="profile.html">Profile</a></li>
-            <li><a href="userblog.html">Blogs</a></li>
+            <li><a href="userblog.html" onclick="getAllUserBlogs()">Blogs</a></li>
             <li><a href="resetpassword.html"></a></li>
 
           </ul>
@@ -26,7 +28,7 @@
         <section class="card-container">
           <div class="cards">
             <h1>Blogs</h1>
-            <span>0</span>
+            <span id="num">0</span>
           </div>
           <!-- <div class="cards">
             <h1>Users</h1>

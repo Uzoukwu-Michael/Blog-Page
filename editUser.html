@@ -4,14 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <H1>Edit User</H1>
+  <p id="message"></p>
   <form id="editUserForm">
-    <input type="hidden" name="userId" id="userId">
+    <input type="number" name="userId" id="userId">
     <input type="text" id="userName" name="userName" required>
     <input type="text" id="userEmail" name="userEmail" required>
-    <button id="SaveChanges">Save Changes</button>
+    <button id="saveChanges">Save Changes</button>
   </form>
+  <script src="db.js"></script>
+  <script src="edituser.js"></script>
 </body>
 </html>

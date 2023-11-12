@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<form id="blogform">
+<input type="file" id="image" name="image" required>
+
+<input type="text" id="title" name="title" required placeholder="Blog Title">
+
+<textarea name="content" id="content" placeholder="Blog Content"></textarea>
+
+<input type="text" id="uid" name="uid" required placeholder="uid">
+
+<button type="button" onclick="createBlog()">Create</button>
+
+
+
+
+</form>
+
+  <script src="db.js"></script>
+  <script src="create.js"></script>
+</body>
+</html>

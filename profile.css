@@ -11,3 +11,7 @@ a{
   color: var(--off-color);
   margin: 20px;
 }
+.p{
+  text-align: center;
+  font-size: 28px;
+}

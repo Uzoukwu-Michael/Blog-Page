@@ -23,12 +23,28 @@ body{
  align-items: center;
 
 }
+/* registeration page css */
+
 #registrationPageBody{
   display: flex;
  justify-content: center;
  align-items: center;
-
+ height: 100%;
 }
+
+#registerationFormContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  padding: 20px;
+  width: 600px;
+  border-radius: 12px;
+  justify-content: center;
+  background-color: var(--primary-color);
+}
+
+/* registeration page css ends here */
 #loginPageBody{
   display: flex;
  justify-content: center;
@@ -217,3 +233,21 @@ th{
   font-size: large;
   font-weight: bold;
 }
+
+/* user page */
+
+#userBody li{
+  color: white;
+}
+#userBody #userDashDiv{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 100px;
+}
+
+#userBody #userDashDiv button{
+  width: 170px;
+}
+
+/* user page ends */
